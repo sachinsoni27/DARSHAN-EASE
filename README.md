@@ -4,7 +4,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://darshanease.netlify.app/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)](https://www.netlify.com/)
+[![Vercel](https://darshan-ease-9xqrek4ey-sachin-sonis-projects.vercel.app/)
 
 ## 📖 About
 
