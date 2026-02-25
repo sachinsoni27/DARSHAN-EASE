@@ -21,7 +21,7 @@ DARSHAN EASE is a web application designed to help devotees discover temples and
 ## 🛠️ Tech Stack
 
 - **Frontend**: TypeScript, HTML, CSS
-- **Deployment**: Netlify (Continuous Deployment)
+- **Deployment**: Vercel (Continuous Deployment)
 - **Development**: Built using Antigravity (Google's IDE)
 - **Version Control**: Git & GitHub
 
