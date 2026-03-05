@@ -2,15 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// TODO: Replace with your full Firebase project configuration
+// Firebase configuration is loaded from environment variables to keep keys out of source control.
+// Copy `.env.example` to `.env.local` and fill in your project's credentials.
 const firebaseConfig = {
-    apiKey: "AIzaSyBFHHIUlzSDROryN_LmOAElCHCQIATenKU",
-    authDomain: "darshanease-62863.firebaseapp.com",
-    projectId: "darshanease-62863",
-    storageBucket: "darshanease-62863.firebasestorage.app",
-    messagingSenderId: "815747486878",
-    appId: "1:815747486878:web:4b53ae15d07b8bab46d78f",
-    measurementId: "G-HCBKNW553G"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY as string,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN as string,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID as string,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET as string,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID as string,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID as string,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID as string
 };
 
 // Initialize Firebase

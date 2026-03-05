@@ -1,10 +1,13 @@
 // Database configuration
+// The MongoDB driver removed support for `useNewUrlParser` and
+// `useUnifiedTopology` in newer releases. Passing them now causes a
+// MongoParseError (`options usenewurlparser, useunifiedtopology are not
+// supported`). Mongoose 7+ automatically handles parsing and topology
+// management, so we simply keep an empty options object (additional runtime
+// options like poolSize can be added here if needed).
 const mongodbConfig = {
     uri: process.env.MONGO_URI || 'mongodb://localhost:27017/darshanease',
-    options: {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    }
+    options: {}
 };
 
 // Server configuration

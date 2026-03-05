@@ -175,7 +175,7 @@ yarn install
 
 ### Step 3: Configure Environment Variables
 
-Create `.env.local` file with Firebase credentials:
+Create `.env.local` file with Firebase credentials (copy `.env.example` and replace values):
 
 ```env
 # Firebase Configuration (Get from Firebase Console)
@@ -385,12 +385,13 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log('MongoDB error:', err));
+// modern mongoose versions automatically apply parsing/topology defaults;
+// the legacy options `useNewUrlParser` and `useUnifiedTopology` are no longer
+// allowed and will throw an error if provided. Simply pass the URI (or an
+// options object with valid fields) as shown below.
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log('MongoDB error:', err));
 
 // Routes
 app.use('/api/temples', require('./routes/templeRoutes'));
