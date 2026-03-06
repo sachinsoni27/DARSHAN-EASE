@@ -250,9 +250,9 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## �‍💼 Team
 
-- **Sachin Soni** - Lead Developer
+- **Sachin Soni** -Core Contributor
 - **Sakshi Singh** - Core Contributor
-- **Satish Kumar** - Core Contributor
+- **Satish Kumar** -  Lead Developer
 
 ## 📞 Support & Contact
 
